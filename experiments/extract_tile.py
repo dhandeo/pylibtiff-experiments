@@ -39,9 +39,6 @@ from libtiff.utils import bytes2str
 from libtiff_ctypes import libtiff
 from libtiff_ctypes import TIFF
 
-tif = TIFF.open("c:\\Users\\dhanannjay.deo\\Downloads\\example.tif","r")
-#    print atag
-
 #table = tif.GetField("JPEGTables", count=2)
 #table = tif.GetField("colormap")
 #print table
@@ -64,21 +61,22 @@ class TileReader():
         """
         :param dir: Number of Directory to select
         """
-        if not (len(self.levels) > dir):
-            raise Exception("Level not stored in file")
-        else:
-            pass
+        #if not (len(self.levels) > dir):
+        #    raise Exception("Level not stored in file")
+        #else:
+        #    pass
             #print "Len: ", len(self.levels), dir
         libtiff.TIFFSetDirectory(self.tif, dir)
         self.dir = libtiff.TIFFCurrentDirectory(self.tif).value
         #libtiff.TIFFReadDirectory(self.tif)
         self.update_image_info()
+        self.is_tiled = libtiff.TIFFIsTiled(self.tif)
 
     def _read_JPEG_tables(self):
         """
         """
         libtiff.TIFFGetField.argtypes = libtiff.TIFFGetField.argtypes[:2] + [ctypes.POINTER(ctypes.c_uint16), ctypes.POINTER(ctypes.c_void_p)]
-        r = libtiff.TIFFGetField(tif, 347, self.jpegtable_size, ctypes.byref(self.buf))
+        r = libtiff.TIFFGetField(self.tif, 347, self.jpegtable_size, ctypes.byref(self.buf))
         assert(r==1)
         self.jpegtables = ctypes.cast(self.buf, ctypes.POINTER(ctypes.c_ubyte))
         logging.log(logging.INFO, "Size of jpegtables: %d"%(self.jpegtable_size.value))
@@ -87,16 +85,19 @@ class TileReader():
         """
         Attempts to compute the dimensions of each resolution by
         """
-        self.tile_width = tif.GetField("TileWidth")
-        self.tile_height = tif.GetField("TileLength")
+        self.tile_width = self.tif.GetField("TileWidth")
+        self.tile_height = self.tif.GetField("TileLength")
 
         self.levels = {}
-        xml = ET.parse("meta.xml")
-        for b in xml.findall(".//DataObject[@ObjectType='PixelDataRepresentation']"):
-            level = int(b.find(".//*[@Name='PIIM_PIXEL_DATA_REPRESENTATION_NUMBER']").text)
-            columns = int(b.find(".//*[@Name='PIIM_PIXEL_DATA_REPRESENTATION_COLUMNS']").text)
-            rows = int(b.find(".//*[@Name='PIIM_PIXEL_DATA_REPRESENTATION_ROWS']").text)
-            self.levels[level] = [columns, rows]
+        meta = self.tif.GetField("ImageDescription")
+        if meta:
+            #print meta
+            xml = ET.parse(meta)
+            for b in xml.findall(".//DataObject[@ObjectType='PixelDataRepresentation']"):
+                level = int(b.find(".//*[@Name='PIIM_PIXEL_DATA_REPRESENTATION_NUMBER']").text)
+                columns = int(b.find(".//*[@Name='PIIM_PIXEL_DATA_REPRESENTATION_COLUMNS']").text)
+                rows = int(b.find(".//*[@Name='PIIM_PIXEL_DATA_REPRESENTATION_ROWS']").text)
+                self.levels[level] = [columns, rows]
 
     def set_input_params(self, params):
         """
@@ -119,13 +120,13 @@ class TileReader():
         :raises: AttributeError, KeyError
         """
         # Getting a single tile
-        tile_size = libtiff.TIFFTileSize(tif, tileno)
+        tile_size = libtiff.TIFFTileSize(self.tif, tileno)
 
         #print "TileSize: ", tile_size.value
 
         tmp_tile = create_string_buffer(tile_size.value)
 
-        r2 = libtiff.TIFFReadRawTile(tif, tileno, tmp_tile, tile_size)
+        r2 = libtiff.TIFFReadRawTile(self.tif, tileno, tmp_tile, tile_size)
         #print "Valid size in tile: ", r2.value
         # Experiment with the file output
 
@@ -174,20 +175,20 @@ class TileReader():
         """
 
         # Grab the image dimensions through the metadata
-        self.width = self.levels[self.dir][0]
-        self.height = self.levels[self.dir][1]
+        #self.width = self.levels[self.dir][0]
+        #self.height = self.levels[self.dir][1]
 
         #xml = ET.fromstring(tif.GetField("ImageDescription"))
         #self.image_width = int(xml.find(".//*[@Name='PIM_DP_IMAGE_COLUMNS']").text)
         #self.image_height = int(xml.find(".//*[@Name='PIM_DP_IMAGE_ROWS']").text)
 
-        #self.image_width = tif.GetField("ImageWidth")
-        #self.image_length = tif.GetField("ImageLength")
+        self.width = self.tif.GetField("ImageWidth")
+        self.height = self.tif.GetField("ImageLength")
         #print tif.GetField("ImageDescription")
 
-def write_svg(scale=100.0):
+def write_svg(fname="c:\\Users\\dhanannjay.deo\\Downloads\\PalaisDuLouvre.tif", scale=100.0):
     tile = TileReader()
-    tile.set_input_params({"fname" : "c:\\Users\\dhanannjay.deo\\Downloads\\example.tif"})
+    tile.set_input_params({"fname" : fname})
 
 
     for dir in [0,1,2,3,4]:
@@ -199,7 +200,7 @@ def write_svg(scale=100.0):
         tile_length = tile.tile_height
         tile_width = tile.tile_width
 
-        dwg = svgwrite.Drawing(filename="test_%d.svg"%(dir), size=(image_width / scale,image_length/scale), debug=True)
+        dwg = svgwrite.Drawing(filename="test_%d.svg"%(dir), debug=True)
 
         print "Selected Dir: ", dir, "Actual: ", tile.dir
         print "Image: ", image_width, image_length
@@ -219,7 +220,7 @@ def write_svg(scale=100.0):
                     done = done + 1
                     #print count, done, r
                     color = "purple"
-                    dwg.add(dwg.rect(insert=(x/scale*px, y/scale*px), size=(512.0/scale*px, 512.0/scale*px),
+                    dwg.add(dwg.rect(insert=(x/scale*px, y/scale*px), size=(tile_width/scale*px, tile_length/scale*px),
                         fill="purple", opacity="0.5", stroke='red', stroke_width=1*px))
                     #dwg.add(dwg.circle(center=(x/scale*px, y/scale*px), r=(2*px), stroke='red', stroke_width=2*px))
                 else:
@@ -229,15 +230,16 @@ def write_svg(scale=100.0):
                 x += tile_width
 
             y += tile_length
+
         dwg.save()
-        print "Done .."
-    tif.close()
+        print "Done ..", done, " Tiles"
 
 
-def list_tiles(dir):
+
+def list_tiles(dir, fname="c:\\Users\\dhanannjay.deo\\Downloads\\PalaisDuLouvre.tif"):
 
     tile = TileReader()
-    tile.set_input_params({"fname" : "c:\\Users\\dhanannjay.deo\\Downloads\\example.tif"})
+    tile.set_input_params({"fname" : fname})
     tile.select_dir(dir)
 
     image_length = tile.height
@@ -248,6 +250,7 @@ def list_tiles(dir):
     print "Selected Dir: ", dir, "Actual: ", tile.dir
     print "Image: ", image_width, image_length
     print "Width+Height :", tile_width, tile_length
+    print "IsTiled: ", tile.is_tiled
 
 
 def extract_tile():
@@ -259,7 +262,7 @@ def extract_tile():
 
 
 if __name__ == "__main__":
-    #for i in range(5):
+    #for i in range(6):
     #    list_tiles(i)
 
-    write_svg()
+    write_svg(scale=5.)
