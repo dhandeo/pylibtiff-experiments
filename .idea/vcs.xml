@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
     <mapping directory="$USER_HOME$/projects/flask-slideatlas" vcs="Git" />
+    <mapping directory="$USER_HOME$/projects/uploader_jython" vcs="Git" />
   </component>
 </project>
 

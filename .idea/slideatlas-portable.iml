@@ -5,6 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="flask-slideatlas" />
+    <orderEntry type="module" module-name="uploader_jython" />
   </component>
 </module>
 
