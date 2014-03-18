@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/projects/flask-slideatlas/.idea/flask-slideatlas.iml" filepath="$USER_HOME$/projects/flask-slideatlas/.idea/flask-slideatlas.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/slideatlas-portable.iml" filepath="$PROJECT_DIR$/.idea/slideatlas-portable.iml" />
     </modules>
   </component>
