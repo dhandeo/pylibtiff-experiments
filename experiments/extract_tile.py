@@ -336,4 +336,6 @@ if __name__ == "__main__":
     #    list_tiles(0,fname=i)
         #test_embedded_images(i)
 
-    write_svg(toextract=False, fname="d:\\data\\phillips\\20140313T180859-805105.ptif")
+    # /home/dhan/data/philips/20140313T165829-545675.ptif
+
+    write_svg(toextract=False, fname="/home/dhan/data/philips/20140313T165829-545675.ptif")
