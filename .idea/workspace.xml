@@ -36,36 +36,7 @@
       <file leaf-file-name="extract_tile.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiments/extract_tile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="17" selection-start="6210" selection-end="6210" vertical-scroll-proportion="0.33195877" vertical-offset="2950" max-vertical-offset="5848">
-              <folding>
-                <element signature="e#243#253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/ctypes/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="382" column="0" selection-start="12094" selection-end="12094" vertical-scroll-proportion="0.0" vertical-offset="6333" max-vertical-offset="9537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="libtiff_ctypes.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/libtiff/libtiff_ctypes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="570" column="0" selection-start="21961" selection-end="21961" vertical-scroll-proportion="-5.6923075" vertical-offset="9457" max-vertical-offset="15878">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiments/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
+            <state line="87" column="21" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.58810574" vertical-offset="1127" max-vertical-offset="5797">
               <folding />
             </state>
           </provider>
@@ -74,16 +45,7 @@
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ptiff-server/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="35" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1445">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewer.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ptiff-server/static/viewer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="32" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="680">
+            <state line="95" column="28" selection-start="2837" selection-end="2837" vertical-scroll-proportion="-10.576923" vertical-offset="1289" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -92,16 +54,7 @@
       <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ptiff-server/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="run.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/projects/flask-slideatlas/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="91" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
+            <state line="7" column="24" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -168,7 +121,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,7 +135,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="slideatlas-portable" />
+              <option name="myItemId" value="uploader_jython" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -196,26 +148,23 @@
               <option name="myItemId" value="slideatlas-portable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="experiments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="SearchEverywhereHistory" value="R" />
-    <property name="last_opened_file_path" value="C:/PortableGit-1.7.11/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/experiments" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -231,7 +180,7 @@
       <recent name="D:\projects\slideatlas-portable\experiments" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.extract_tile">
+  <component name="RunManager" selected="Python.__init__">
     <configuration default="false" name="extract_tile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -471,8 +420,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.extract_tile" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="1" class="java.lang.String" itemvalue="Python.extract_tile" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in common_utils" />
         <item index="3" class="java.lang.String" itemvalue="Python.coords_from_name" />
         <item index="4" class="java.lang.String" itemvalue="Python.common_utils" />
@@ -480,6 +429,23 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f1c6f1d7-1660-40b8-bf17-cae0d3f249c5" name="Default" comment="" />
@@ -490,17 +456,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1688" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743512" sideWeight="0.424" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21605311" sideWeight="0.3977143" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24743512" sideWeight="0.16228572" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21605311" sideWeight="0.152" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4137143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44914284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -574,14 +540,38 @@
     </entry>
     <entry file="file://$USER_HOME$/projects/flask-slideatlas/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="91" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+        <state line="5" column="0" selection-start="91" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ptiff-server/common_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="23" selection-start="941" selection-end="941" vertical-scroll-proportion="0.7010309" vertical-offset="459" max-vertical-offset="1343" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/libtiff/libtiff_ctypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="570" column="0" selection-start="21961" selection-end="21961" vertical-scroll-proportion="0.0" vertical-offset="9690" max-vertical-offset="15963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/ctypes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="552" column="9" selection-start="17568" selection-end="17568" vertical-scroll-proportion="3.2206097" vertical-offset="7165" max-vertical-offset="9537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.02467344" vertical-offset="0" max-vertical-offset="689">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ptiff-server/static/viewer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="680">
+        <state line="25" column="33" selection-start="709" selection-end="709" vertical-scroll-proportion="0.61538464" vertical-offset="17" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
@@ -593,47 +583,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ptiff-server/common_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="941" selection-end="941" vertical-scroll-proportion="0.7010309" vertical-offset="459" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ptiff-server/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="35" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/libtiff/libtiff_ctypes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="570" column="0" selection-start="21961" selection-end="21961" vertical-scroll-proportion="-5.6923075" vertical-offset="9457" max-vertical-offset="15878">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/ctypes/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="382" column="0" selection-start="12094" selection-end="12094" vertical-scroll-proportion="0.0" vertical-offset="6333" max-vertical-offset="9537">
+        <state line="95" column="28" selection-start="2837" selection-end="2837" vertical-scroll-proportion="-10.576923" vertical-offset="1289" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiments/extract_tile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="17" selection-start="6210" selection-end="6210" vertical-scroll-proportion="0.33195877" vertical-offset="2950" max-vertical-offset="5848">
-          <folding>
-            <element signature="e#243#253#0" expanded="true" />
-          </folding>
+        <state line="87" column="21" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.58810574" vertical-offset="1127" max-vertical-offset="5797">
+          <folding />
         </state>
       </provider>
     </entry>
