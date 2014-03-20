@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples
+END
+decoding.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples/decoding.py
+END
+pbm.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples/pbm.py
+END
+mandel.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples/mandel.py
+END
+ndarray.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples/ndarray.py
+END
+huffman.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples/huffman.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples/README
+END
+smallints.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/examples/smallints.py
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/53/trunk/libtiff/bitarray-0.3.5-numpy
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/LICENSE
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/AUTHORS
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/TODO
+END
+CHANGE_LOG
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/48/trunk/libtiff/bitarray-0.3.5-numpy/CHANGE_LOG
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/MANIFEST
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/setup.py
+END
+PKG-INFO
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/PKG-INFO
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/README
+END
+README.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/29/trunk/libtiff/bitarray-0.3.5-numpy/README.html
+END

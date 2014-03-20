@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/78/trunk/libtiff/tests
+END
+test_tiff_array.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/78/trunk/libtiff/tests/test_tiff_array.py
+END
+test_tiff_file.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/78/trunk/libtiff/tests/test_tiff_file.py
+END
+test_simple.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/59/trunk/libtiff/tests/test_simple.py
+END
+test_tiff_image.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/78/trunk/libtiff/tests/test_tiff_image.py
+END
+test_lzw.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49/trunk/libtiff/tests/test_lzw.py
+END
