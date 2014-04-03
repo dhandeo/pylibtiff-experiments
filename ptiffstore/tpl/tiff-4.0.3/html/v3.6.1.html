@@ -46,7 +46,7 @@ The following information is located here:
 <A NAME="highlights"><B><FONT SIZE=+3>M</FONT>AJOR CHANGES:</B></A>
 
 <ul>
-	<li> New utility <a href="./man/tiff2pdf.1.html">tiff2pdf</a>
+	<li> New utility <a href="man/tiff2pdf.1.html">tiff2pdf</a>
 	for converting TIFF images directly into PDF.
 	<li> New <a href="./man/TIFFcolor.3t.html">color conversion module</a>.
 	<li> Full support for Orientation tag in
@@ -125,8 +125,8 @@ interface. YCbCr to RGB conversion code also moved there and now has
 routines currently used in TIFFRGBAImage interface only and not supported in
 other libtiff tools yet. So if you want, for example, to convert CIE Lab image
 into PostScript file you should do it in two steps: chnge colorspace to RGB
-using <a href="./man/tiff2rgba.1.html">tiff2rgba</a> utility abd then process
-it with the <a href="./man/tiff2ps.1.html">tiff2ps</a>.
+using <a href="man/tiff2rgba.1.html">tiff2rgba</a> utility abd then process
+it with the <a href="man/tiff2ps.1.html">tiff2ps</a>.
 
 <li> libtiff/tif_tile.c: Remove spurious use of "s" (sample) in the
 planarconfig_contig case in TIFFComputeTile() as per bug 387
@@ -149,19 +149,19 @@ as per bug 424.
 
 <UL>
 
-<li> <a href=./man/tiff2pdf.1.html>tiff2pdf</a>: New tool, written by
+<li> <a href=man/tiff2pdf.1.html>tiff2pdf</a>: New tool, written by
 Ross Finlayson, to directly convert TIFF files to PDF.
 
-<li> <a href=./man/tiffgt.1.html>tiffgt</a>: Unmaintained and platform
+<li> <a href=man/tiffgt.1.html>tiffgt</a>: Unmaintained and platform
 dependent sgigt utility removed and replaced with the completely rewritten
-portable <a href=./man/tiffgt.1.html>tiffgt</a> tool (depend on OpenGL and
+portable <a href=man/tiffgt.1.html>tiffgt</a> tool (depend on OpenGL and
 GLUT). This tool will not build by default.
 
-<li> <a href=./man/ras2tiff.1.html>ras2tiff</a>: Properly determine
+<li> <a href=man/ras2tiff.1.html>ras2tiff</a>: Properly determine
 SUN Rasterfiles with the reverse byte order (it is reported by the magic
 header field). Problem reported by Andreas Wiesmann.
 
-<li> <a href=./man/raw2tiff.1.html>raw2tiff</a>: Implemented image size
+<li> <a href=man/raw2tiff.1.html>raw2tiff</a>: Implemented image size
 guessing using correlation coefficient calculation between two neighbour
 lines.
 

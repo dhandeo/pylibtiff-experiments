@@ -46,10 +46,10 @@ The following information is located here:
 <A NAME="highlights"><B><FONT SIZE=+3>M</FONT>AJOR CHANGES:</B></A>
 
 <ul>
-	<li> New utility <a href=./man/raw2tiff.1.html>raw2tiff</a>
+	<li> New utility <a href=man/raw2tiff.1.html>raw2tiff</a>
 for converting raw rasters into TIFF files.
-	<li> Lots of new <a href=./man/tiff2ps.1.html>tiff2ps</a> options.
-	<li> Lots of new <a href=./man/fax2tiff.1.html>fax2tiff</a> options.
+	<li> Lots of new <a href=man/tiff2ps.1.html>tiff2ps</a> options.
+	<li> Lots of new <a href=man/fax2tiff.1.html>fax2tiff</a> options.
 	<li> Lots of bug fixes for LZW, JPEG and OJPEG compression. 
 </ul>
 
@@ -295,62 +295,62 @@ ImageGear generated files.
 
 <UL>
 	
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>: Added page size setting
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>: Added page size setting
 when creating PS Level 2.
 
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>: Fixed PS comment emitted when
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>: Fixed PS comment emitted when
 FlateDecode is being used.
 
-<li> <a href=./man/tiffsplit.1.html>tiffsplit</a>: increased the maximum
+<li> <a href=man/tiffsplit.1.html>tiffsplit</a>: increased the maximum
 number of pages that can be split.
 
-<li> <a href=./man/raw2tiff.1.html>raw2tiff</a>: Added option `-p' to
+<li> <a href=man/raw2tiff.1.html>raw2tiff</a>: Added option `-p' to
 explicitly select color	space of input image data.
 
-<li> <a href=./man/tiffmedian.1.html>tiffmedian</a>: Suppiort for large
+<li> <a href=man/tiffmedian.1.html>tiffmedian</a>: Suppiort for large
 (> 2GB) images.
 
-<li> <a href=./man/ppm2tiff.1.html>ppm2tiff</a>: Fixed possible endless loop.
+<li> <a href=man/ppm2tiff.1.html>ppm2tiff</a>: Fixed possible endless loop.
 
-<li> <a href=./man/tiff2rgba.1.html>tiff2rgba</a>: Switched to use
+<li> <a href=man/tiff2rgba.1.html>tiff2rgba</a>: Switched to use
 <A HREF="./man/TIFFReadRGBAImage.3t.html">TIFFReadRGBAImageOriented()</A>
 instead of <A HREF="./man/TIFFReadRGBAImage.3t.html">TIFFReadRGBAImage()</A>.
 
-<li> <a href=./man/tiffcmp.1.html>tiffcmp</a>: Fixed problem with unused data
+<li> <a href=man/tiffcmp.1.html>tiffcmp</a>: Fixed problem with unused data
 comparing (bug 349). `-z' option now can be used to set the number of reported
 different bytes.
 
-<li> <a href=./man/tiffcp.1.html>tiffcp</a>: Added possibility to specify
+<li> <a href=man/tiffcp.1.html>tiffcp</a>: Added possibility to specify
 value -1 to -r option to get the entire image as one strip (bug 343).
 
-<li> <a href=./man/tiffcp.1.html>tiffcp</a>: Set the correct RowsPerStrip
+<li> <a href=man/tiffcp.1.html>tiffcp</a>: Set the correct RowsPerStrip
 and PageNumber values (bug 343).
 	
-<li> <a href=./man/fax2tiff.1.html>fax2tiff</a>: Page numbering fixed (bug
+<li> <a href=man/fax2tiff.1.html>fax2tiff</a>: Page numbering fixed (bug
 341).
 
-<li> <a href=./man/ppm2tiff.1.html>ppm2tiff</a>: PPM header parser improved:
+<li> <a href=man/ppm2tiff.1.html>ppm2tiff</a>: PPM header parser improved:
 now able to skip comments.
 
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>: Force deadzone printing when
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>: Force deadzone printing when
 EPS output specified (bug 325).
 
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>: Add ability to generate
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>: Add ability to generate
 PS Level 3. It basically allows one to use the /flateDecode filter for ZIP
 compressed TIFF images. Patch supplied by Tom Kacvinsky (bug 328).
 	
-<li> <a href=./man/tiffcp.1.html>tiffcp</a>: Fixed problem with colorspace
+<li> <a href=man/tiffcp.1.html>tiffcp</a>: Fixed problem with colorspace
 conversion for JPEG encoded images (bugs 23 and 275)
 
-<li> <a href=./man/fax2tiff.1.html>fax2tiff</a>: Applied patch from
+<li> <a href=man/fax2tiff.1.html>fax2tiff</a>: Applied patch from
 Julien Gaulmin. More switches for fax2tiff tool for better control
 of input and output (bugs 272 and 293).
 
-<li> <a href=./man/raw2tiff.1.html>raw2tiff</a>:
+<li> <a href=man/raw2tiff.1.html>raw2tiff</a>:
 New utility for turning raw raster images into TIFF files
 written by Andrey Kiselev.
 
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>:
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>:
 Sebastian Eken provided patches (bug 200) to add new these new 
 switches:
   <ul>
@@ -362,15 +362,15 @@ switches:
 
 Also, new features merged with code for shrinking/overlapping.
 
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>: Don't emit BeginData/EndData
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>: Don't emit BeginData/EndData
 DSC comments since we are unable to properly include the amount to skip
 as per bug 80.
 
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>: Added workaround for some
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>: Added workaround for some
 software that may crash when last strip of image contains fewer number
 of scanlines than specified by the `/Height' variable as per bug 164.
 
-<li> <a href=./man/tiff2ps.1.html>tiff2ps</a>: Patch from John Williams to add new 
+<li> <a href=man/tiff2ps.1.html>tiff2ps</a>: Patch from John Williams to add new
 functionality for tiff2ps utility splitting long images in several pages as
 per bug 142. New switches:
 	<ul>
@@ -378,22 +378,22 @@ per bug 142. New switches:
 		<li> <b>-L #</b>: overLap split images by # inches
 	</ul>
 
-<li>  <a href=./man/tiff2ps.1.html>tiff2ps</a>: New commandline
+<li>  <a href=man/tiff2ps.1.html>tiff2ps</a>: New commandline
 switches to override resolution units obtained from the input file per bug 131:
 	<ul>
 		<li> <b>-x</b>: override resolution units as centimeters
 		<li> <b>-y</b>: override resolution units as inches
 	</ul>
 
-<li> <a href=./man/fax2tiff.1.html>fax2tiff</a>: Updated to reflect
+<li> <a href=man/fax2tiff.1.html>fax2tiff</a>: Updated to reflect
 latest changes in libtiff per bug 125.
 
 <li> tiff2ps: Division by zero fixed as per bug 88.
 
-<li> <a href=./man/tiffcp.1.html>tiffcp<a>:
+<li> <a href=man/tiffcp.1.html>tiffcp<a>:
 Added support for 'Orientation' tag.
 
-<li> <a href=./man/tiffdump.1.html>tiffdump</a>:
+<li> <a href=man/tiffdump.1.html>tiffdump</a>:
 include TIFFTAG_JPEGTABLES in tag list.
 
 <li> tiffset: fix bug in error reporting.

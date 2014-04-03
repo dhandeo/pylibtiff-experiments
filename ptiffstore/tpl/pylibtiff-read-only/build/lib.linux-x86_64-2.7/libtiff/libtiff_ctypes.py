@@ -40,7 +40,7 @@ if lib is None:
 
 # libtiff = ctypes.cdll.LoadLibrary(lib)
 
-tplpath = os.path.abspath(os.path.join(os.path.dirname(__file__),"..", "..","..",".."))
+tplpath = os.path.abspath(os.path.join(os.path.dirname(__file__), "../", "..","..",".."))
 print "TPL Path: " + tplpath
 libtiffpath = os.path.join(tplpath, "tiff-4.0.3", "libtiff",".libs", "libtiff.so")
 
@@ -65,10 +65,10 @@ if tiff_h is None:
     include_tiff_h = os.path.join(os.path.split(lib)[0], '..', 'include', 'tiff.h')
     if not os.path.isfile(include_tiff_h):
         # fix me for windows:
-        include_tiff_h = os.path.join('/usr','include','tiff.h')
+        include_tiff_h = os.path.join('/usr', 'include','tiff.h')
     if not os.path.isfile(include_tiff_h):
         import glob
-        include_tiff_h = (glob.glob(os.path.join('/usr','include','*linux-gnu','tiff.h')) + [include_tiff_h])[0]
+        include_tiff_h = (glob.glob(os.path.join('/usr', 'include','*linux-gnu','tiff.h')) + [include_tiff_h])[0]
     if not os.path.isfile(include_tiff_h):
         # Base it off of the python called
         include_tiff_h = os.path.realpath(os.path.join(os.path.split(sys.executable)[0], '..', 'include', 'tiff.h'))

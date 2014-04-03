@@ -8,7 +8,7 @@ if not release:
     version += '.dev'
     import os
     svn_version_file = os.path.join(os.path.dirname(__file__),
-                                   '__svn_version__.py')
+                                    '__svn_version__.py')
     svn_entries_file = os.path.join(os.path.dirname(__file__),'.svn',
                                    'entries')
     if os.path.isfile(svn_version_file):
